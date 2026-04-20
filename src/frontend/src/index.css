@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Dark corporate-tech theme */
+    --background: 0.155 0.012 222;
+    --foreground: 0.965 0.005 220;
+    --card: 0.195 0.015 222;
+    --card-foreground: 0.965 0.005 220;
+    --popover: 0.195 0.015 222;
+    --popover-foreground: 0.965 0.005 220;
+    --primary: 0.565 0.13 228;
+    --primary-foreground: 0.985 0 0;
+    --secondary: 0.21 0.015 222;
+    --secondary-foreground: 0.965 0.005 220;
+    --muted: 0.21 0.015 222;
+    --muted-foreground: 0.73 0.02 220;
+    --accent: 0.77 0.12 196;
+    --accent-foreground: 0.11 0.01 222;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.26 0.02 222;
+    --input: 0.26 0.02 222;
+    --ring: 0.77 0.12 196;
+    --chart-1: 0.77 0.12 196;
+    --chart-2: 0.565 0.13 228;
+    --chart-3: 0.696 0.17 162.48;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.11 0.01 222;
+    --sidebar-foreground: 0.965 0.005 220;
+    --sidebar-primary: 0.77 0.12 196;
+    --sidebar-primary-foreground: 0.11 0.01 222;
+    --sidebar-accent: 0.21 0.015 222;
+    --sidebar-accent-foreground: 0.965 0.005 220;
+    --sidebar-border: 0.26 0.02 222;
+    --sidebar-ring: 0.77 0.12 196;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
